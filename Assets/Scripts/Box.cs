@@ -10,11 +10,12 @@ public class Box : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.sleepMode = RigidbodySleepMode2D.StartAsleep;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
